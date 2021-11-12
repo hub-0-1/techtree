@@ -15,7 +15,10 @@ function get_data () {
     Papa.parse("https://hub-0-1.github.io/techtree/liens.csv", {
       header: true,
       download: true,
-      complete: (results) => { resolve(results.data); }
+      complete: (results) => { 
+        console.log(results.data);
+        resolve(results.data); 
+      }
     });
   });
 }
@@ -36,15 +39,6 @@ get_data().then((links) => {
 
   // Creation de l'objet
   let svg = chart(data, types, color);
-
-  /*d3.select(svg)
-      .attr('class', 'chart')
-      .attr("viewBox", "0 0 680 490")
-      .attr("preserveAspectRatio", "xMinYMin meet")
-      .classed("svg-content-responsive", true)
-      .call(d3.zoom().on("zoom", function () {
-        svg.attr("transform", d3.event.transform)
-      }));*/
 
   // Ajouter 
   document.getElementById("graphe").appendChild(svg);
