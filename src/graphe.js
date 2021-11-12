@@ -1,4 +1,5 @@
 // https://www.d3indepth.com/force-layout/
+// https://observablehq.com/@d3/force-directed-graph
 
 import * as d3 from "d3";
 import * as Papa from "papaparse";
@@ -35,6 +36,15 @@ get_data().then((links) => {
 
   // Creation de l'objet
   let svg = chart(data, types, color);
+
+  /*d3.select(svg)
+      .attr('class', 'chart')
+      .attr("viewBox", "0 0 680 490")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .classed("svg-content-responsive", true)
+      .call(d3.zoom().on("zoom", function () {
+        svg.attr("transform", d3.event.transform)
+      }));*/
 
   // Ajouter 
   document.getElementById("graphe").appendChild(svg);
