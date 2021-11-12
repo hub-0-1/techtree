@@ -33,7 +33,10 @@ get_data().then((links) => {
   let svg = chart(data, types, color);
 
   // Ajouter 
-  document.getElementById("graphe").appendChild(svg);
+  let container = document.getElementById("graphe");
+  container.style.width = "600px";
+  container.style.height = "600px";
+  container.appendChild(svg);
 });
 
 //////////////////
@@ -112,8 +115,8 @@ function chart (data, types, color) {
     .attr("stroke-linejoin", "round")
     .selectAll("g")
     .data(nodes)
-    .join("g");
-  //.call(drag(simulation));
+    .join("g")
+    .call(drag(simulation));
 
   node.append("circle")
     .attr("stroke", "white")
