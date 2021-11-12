@@ -15,10 +15,7 @@ function get_data () {
     Papa.parse("https://hub-0-1.github.io/techtree/liens.csv", {
       header: true,
       download: true,
-      complete: (results) => { 
-        console.log(results.data);
-        resolve(results.data); 
-      }
+      complete: (results) => { resolve(results.data); }
     });
   });
 }
