@@ -4,6 +4,8 @@ import * as d3 from "d3";
 import * as Papa from "papaparse";
 import _ from 'lodash';
 
+import './styles.less';
+
 const height = 600;
 const width = 600;
 
@@ -35,10 +37,7 @@ get_data().then((links) => {
   let svg = chart(data, types, color);
 
   // Ajouter 
-  let container = document.getElementById("graphe");
-  container.style.width = "600px";
-  container.style.height = "600px";
-  container.appendChild(svg);
+  document.getElementById("graphe").appendChild(svg);
 });
 
 //////////////////

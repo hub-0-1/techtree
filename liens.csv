@@ -1,4 +1,7 @@
 source,target,type
+0/1,Organisation,ensemble
+0/1,Communication,ensemble
+0/1,BI,ensemble
 Microsoft,Amazon,licensing
 Microsoft,HTC,licensing
 Samsung,Apple,suit
