@@ -2,6 +2,11 @@ source,target,type
 0/1,Organisation,ensemble
 0/1,Communication,ensemble
 0/1,BI,ensemble
+Organisation, Comptabilité, ensemble
+Organisation, Numérique de gestion, ensemble
+Communication, Planification stratégique, ensemble
+Communication, Outils, ensemble
+BI, Cartographie des données, ensemble
 Microsoft,Amazon,licensing
 Microsoft,HTC,licensing
 Samsung,Apple,suit
