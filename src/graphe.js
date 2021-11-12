@@ -138,8 +138,6 @@ function chart (data, types, color) {
     node.attr("transform", d => `translate(${d.x},${d.y})`);
   });
 
-  //invalidation.then(() => simulation.stop());
-
   return svg.node();
 }
 

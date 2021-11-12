@@ -2,8 +2,18 @@ source,target,type
 0/1,Organisation,ensemble
 0/1,Communication,ensemble
 0/1,BI,ensemble
-Organisation, Comptabilité, ensemble
-Organisation, Numérique de gestion, ensemble
-Communication, Planification stratégique, ensemble
-Communication, Outils, ensemble
-BI, Cartographie des données, ensemble
+
+Organisation,Comptabilité,ensemble
+Comptabilité,Outils de gestion des dépenses des employés,action
+Comptabilité,Production de devis standardisés,action
+Comptabilité,Outils de gestion des feuilles de temps,action
+
+Organisation,Numérique de gestion,ensemble
+Numérique de gestion,Gestion des documents,ensemble
+Numérique de gestion,Suite bureautique,ensemble
+Numérique de gestion,Cybersécurité,ensemble
+
+Communication,Planification stratégique,ensemble
+Communication,Outils,ensemble
+
+BI,Cartographie des données,ensemble
